@@ -102,3 +102,5 @@ section .wrap>*:last-child,.hero .grid>div>*:last-child{margin-bottom:0}
 #services .svc-full{display:flex;flex-direction:column}
 #services .svc-full .note{margin-top:auto}
 @media(max-width:980px){.split{grid-template-columns:1fr;gap:36px}.pic{max-width:380px}}
+.split.rev{grid-template-columns:400px minmax(0,1fr)}.split.rev .pic{order:-1}
+@media(max-width:980px){.split.rev{grid-template-columns:1fr}.split.rev .pic{order:0}}
