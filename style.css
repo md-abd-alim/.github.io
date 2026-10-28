@@ -148,3 +148,18 @@ main p,main li,footer p{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .cta p{text-align:justify}
 .stats span,.crumb,.cap,figcaption{text-align:left;hyphens:manual}
 figcaption{text-align:center}
+
+/* About page */
+.linklist{list-style:none;margin:0;padding:0;columns:2;column-gap:28px}
+.linklist li{break-inside:avoid;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
+.linklist.single{columns:1}.linklist.single li{text-align:left}
+.linklist a{text-decoration:none;font-weight:500}.linklist a:hover{text-decoration:underline}
+.stat-cards .card{text-align:center}.stat-cards .big{display:block;font-size:30px;line-height:1.2;color:var(--navy);margin-bottom:4px}
+.stat-cards .card p{text-align:center}
+@media(max-width:720px){.linklist{columns:1}}
+.linklist li{text-align:left;hyphens:manual}
+
+/* Legal + contact */
+.legal{max-width:860px}.legal h2{font-size:22px;margin:34px 0 10px}.legal h2:first-child{margin-top:0}
+.legal ul{margin:0 0 14px;padding-left:22px;color:var(--ink)}.legal li{margin-bottom:6px}
+.linklist.plain li{border:0;padding:5px 0 5px 4px;list-style:disc;display:list-item;margin-left:18px}
