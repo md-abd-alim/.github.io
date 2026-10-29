@@ -168,3 +168,8 @@ figcaption{text-align:center}
 .prose:has(details){max-width:none}
 .card p,.card li,.steps p,.steps li,.note p,footer p,footer li,.cta p,.who-grid p,.linklist li,.stat-cards p,.toc li{text-align:left;hyphens:manual;-webkit-hyphens:manual}
 main p,main li{word-spacing:0}
+/* v5: footer equal columns */
+footer .wrap{width:min(1500px,92%)}
+footer .top{grid-template-columns:repeat(3,1fr);gap:40px}
+@media(max-width:980px){footer .top{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){footer .top{grid-template-columns:1fr}}
